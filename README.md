@@ -80,7 +80,7 @@ if($response->isValid()) {
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/justGeeky/laravel-cybersource/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/a17mad/laravel-cybersource/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 - For Secure Acceptance Web / Mobile Check Out CyberSource DOCS at [W/M](https://www.cybersource.com/developers/getting_started/integration_methods/secure_acceptance_wm/)
