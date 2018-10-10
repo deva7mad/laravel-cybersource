@@ -1,5 +1,5 @@
 {
-    "name": "a17mad/laravel-cybersource",
+    "name": "deva7mad/laravel-cybersource",
     "description": "This package wraps the Cybersource SOAP API in a convenient, easy to use package for Laravel.",
     "type": "library",
     "keywords": [
