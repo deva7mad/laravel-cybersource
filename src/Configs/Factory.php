@@ -13,9 +13,9 @@ class Factory {
 
     public function getFromConfigFile()
     {
-        $configFile = __DIR__ .'/../../../../../../../config/cybersource.php';
+        $configFile = config_path('cybersource.php');
 
-        $defaultConfigs = require(__DIR__ . '/../../../config/config.php');
+        $defaultConfigs = require(__DIR__.'/../../app/config/cybersource.php');
 
         $userProvidedConfigs = is_file($configFile) ? require($configFile) : [];
 
