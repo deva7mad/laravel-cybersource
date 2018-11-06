@@ -103,7 +103,7 @@ class Cybersource {
     // @codeCoverageIgnoreStart
     /**
      * @param $subscriptionId
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function getSubscriptionStatus($subscriptionId)
     {
@@ -120,7 +120,7 @@ class Cybersource {
      * @param null $startDate
      * @param null $merchantReferenceNumber
      * @param $currency
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function createSubscription($paymentToken, $productTitle, $amount, $frequency, $autoRenew = true, $startDate = null, $merchantReferenceNumber = null, $currency = null)
     {
@@ -134,7 +134,7 @@ class Cybersource {
      * @param string $requestId The request ID received from an AuthReply statement, if applicable.
      * @param boolean|null $autoAuthorize Set to false to enable the disableAutoAuth flag to avoid an authorization and simply store the card. The default (null) means to omit the value, which means it'll use the setting on the account. Set to true to force an authorization, whether the account requires it or not.
      * @param string|null $recurringSubscriptionInfo specify that this is an on-demand subscription, it should not auto-bill
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
 
     public function createCardSubscription($requestId = null, $autoAuthorize = null, $recurringSubscriptionInfo = null, $currency = null )
@@ -147,7 +147,7 @@ class Cybersource {
      * @param $subscriptionId
      * @param $paymentToken
      * @param $currency
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function updateSubscription($subscriptionId, $paymentToken, $currency = null)
     {
@@ -158,7 +158,7 @@ class Cybersource {
      * @param $subscriptionId
      * @param $updateCard
      * @param $currency
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function updateCardSubscription($subscriptionId, $updateCard, $currency = null)
     {
@@ -168,7 +168,7 @@ class Cybersource {
 
     /**
      * @param $subscriptionId
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function cancelSubscription($subscriptionId)
     {
@@ -178,7 +178,7 @@ class Cybersource {
 
     /**
      * @param $subscriptionId
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function deleteSubscription($subscriptionId)
     {
@@ -189,7 +189,7 @@ class Cybersource {
 
     /**
      * @param $requestId
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function voidTransaction($requestId)
     {
@@ -200,7 +200,7 @@ class Cybersource {
     /**
      * @param $requestId
      * @param $amount
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function captureTransaction($requestId, $amount)
     {
@@ -211,7 +211,7 @@ class Cybersource {
     /**
      * @param $amount
      * @param $currency
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function chargeCardOnce($amount = null, $currency = null)
     {
@@ -237,7 +237,7 @@ class Cybersource {
     /**
      * @param $amount
      * @param $paymentToken
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function chargeOnce($amount, $paymentToken, $currency = null)
     {
@@ -256,7 +256,7 @@ class Cybersource {
      * @param $transactionId
      * @param $currency
      * @param $total
-     * @return \Credibility\LaravelCybersource\models\CybersourceResponse
+     * @return \JustGeeky\LaravelCybersource\models\CybersourceResponse
      */
     public function refund($transactionId, $currency = null, $total)
     {
