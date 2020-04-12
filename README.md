@@ -76,7 +76,7 @@ if($response->isValid()) {
 
 ## Author
 
-* **Ahmad Elknany** - *Development* - [Linkedin](https://www.linkedin.com/in/ahmad-elkenany/)
+* **Ahmad Elkenany** - *Development* - [Linkedin](https://www.linkedin.com/in/ahmad-elkenany/)
 
 ## License
 
